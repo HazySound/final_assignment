@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio by Simon Park</title>
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/portfolio.png">
+	    
+	    <link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="assets/css/button.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		
+		<script>
+		    function fnMove(seq){
+		        var offset = $("#div" + seq).offset();
+		        $('html, body').animate({scrollTop : offset.top}, 300);
+		        $("#div" + seq).fadeTo(2000, 1);
+		        $("#div3").fadeTo(2000, 1);
+		        $("#div4").fadeTo(2000, 1);
+		    }
+		</script>
+		
+	</head>
+	
+	<body style="background-color:#222222">
+		
+		<div class="loader"></div>
+		
+		<div id="open-page">
+		
+			<header class="header-area header-sticky">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-12">
+		                    <nav class="main-nav animate-box fadeInUp animated">
+		                        <a href="index.html" class="logo">Port<em>folio</em></a>
+		                        <ul class="nav">
+		                            <li class="animate-box fadeInUp animated"><a href="index.html" class="active">Home</a></li>
+		                            <li class="animate-box fadeInUp animated"><a href="bio.html">Bio</a></li>
+		                        </ul>        
+		                        <a class='menu-trigger'>
+		                            <span>Menu</span>
+		                        </a>
+		                    </nav>
+		                </div>
+		            </div>
+		        </div>
+		    </header>
+		    
+		    <div class="contents">
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="contents-intro-text col-lg-12">
+		    				<h1 class="animate-box fadeInUp animated">2017<em>012879</em></h1>
+		    				<h1 class="animate-box fadeInUp animated">ICT<em> 융합학부</em></h1>
+		    				<h1 class="animate-box fadeInUp animated">박<em>시몬</em></h1>
+		    				<h1 class="animate-box fadeInUp animated">PORT<em>FOLIO</em></h1><br>
+		    				<h2 class="animate-box fadeInUp animated">지금<em> 시작합니다!</em></h2><br>
+		    			</div>
+		    			<div class="col-lg-12">
+		    				<button class="my-btn animate-box fadeInUp animated" style="margin-top:150px;" onclick="fnMove('2')">start</button>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+		    
+		    <div id="project">
+		    	<div class="project-class" style="margin-bottom: 30px; opacity: 0;" id="div2">
+			    	<div class="container">
+			    		<div class="project-class-inner row">
+							<div class="imgs col-md-8">
+								<div class="img-holder-1">
+									<img src="assets/images/seotta_large.PNG">
+								</div>
+								<div class="img-holder-2">
+									<img src="assets/images/seotta_small.PNG">
+								</div>
+							</div>
+							<div class="text col-md-4">
+								<h2>섯다 프로그램, 2017</h2>
+								<p>대학교 입학 후 처음으로 진행한 프로젝트 과제입니다. 인터넷 블로그에서 찾은 포커 프로그램 코드를 섯다에 맞게 변형하여 작성하였습니다.</p>
+								<button class="my-btn" style="margin-top:150px;" onclick="location.href='seotta.html'">View Project</button>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </div>
+		    
+		    <div id="project">
+		    	<div class="container project-class" style="opacity: 0;" id="div3">
+			    	<div class="project-class-inner row">
+						<div class="imgs col-md-8 animate-box">
+							<div class="img-holder-1 animate-box">
+								<img src="assets/images/chat_large.PNG">
+							</div>
+							<div class="img-holder-2 animate-box">
+								<img src="assets/images/chat_small.PNG">
+							</div>
+						</div>
+						<div class="text col-md-4 animate-box">
+							<h2>오픈채팅 프로그램, 2017</h2>
+							<p>자바 프로그래밍 설계방법론 수업 시간에 진행한 프로젝트 과제입니다. 유튜브 강의를 참고하여 작성한 뒤 다양한 기능들을 추가하였습니다.</p>
+							<button class="my-btn" style="margin-top:150px;" onclick="location.href='chat.html'">View Project</button>
+						</div>
+					</div>
+				</div>
+		    </div>
+		    
+		    <div id="project">
+		    	<div class="container project-class" style="opacity: 0;" id="div4">
+			    	<div class="project-class-inner row">
+						<div class="imgs col-md-8 animate-box">
+							<div class="img-holder-1 animate-box">
+								<img src="assets/images/anna_large.PNG">
+							</div>
+							<div class="img-holder-2 animate-box">
+								<img src="assets/images/anna_small.PNG">
+							</div>
+						</div>
+						<div class="text col-md-4 animate-box">
+							<h2>안나의 방(방탈출 게임), 2018</h2>
+							<p>게임디자인 수업 시간에 진행한 프로젝트 과제입니다. RPGMaker로 작성하였으며 다양한 도트, 스토리 등에 많은 신경을 썼습니다.</p>
+							<button class="my-btn" style="margin-top:150px;"onclick="location.href='anna.html'">View Project</button>
+						</div>
+					</div>
+				</div>
+		    </div>
+		    
+		    
+		    <footer id="custom-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p><small>&copy; HYU Portfolio <br> Created by SIMON PARK </small> </p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+		
+		
+		
+		<!-- script -->
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+	    <script src="assets/js/loading.js"></script>
+	    <script src="assets/js/jquery.waypoints.min.js"></script>
+	    <script src="assets/js/bootstrap.min.js"></script>
+	    
+	    
+	
+	    <!-- Plugins -->
+	    <script src="assets/js/scrollreveal.min.js"></script>
+	    <script src="assets/js/accordions.js"></script>
+	    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	    
+	    <!-- Global Init -->
+	    <script src="assets/js/custom.js"></script>
+	</body>
+</html>
